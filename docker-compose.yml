@@ -1,0 +1,42 @@
+version: '3'
+services:
+
+  # PHP container for Symfony
+  symfony-app:
+    image: shinsenter/symfony:latest
+    volumes:
+      - ./code/symfony:/var/www/html
+    working_dir: /var/www/html
+    networks:
+      - nordiceasy
+    depends_on:
+      - nordiceasy_mysql
+    ports:
+      - "8000:80"
+
+  # MySQL container
+  nordiceasy_mysql:
+    image: mysql:8.0
+    volumes:
+      - ./mysql-nordiceasy-data:/var/lib/mysql8.0
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    ports:
+      - "3308:3306"
+    networks:
+      - nordiceasy
+
+  # React.js container with npm
+  react-app:
+    build: ./code/react
+    working_dir: /app
+    volumes:
+      - ./code/react:/app
+    networks:
+      - nordiceasy
+    ports:
+      - "3000:3000"
+
+networks:
+  nordiceasy:
+    driver: bridge

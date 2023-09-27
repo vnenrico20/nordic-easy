@@ -1,0 +1,22 @@
+.appBar {
+    background-color: #343a40 !important;
+    height: 50px !important;
+}
+
+.name {
+    margin-right: 15px !important;
+}
+
+.link {
+    text-transform: unset;
+    color: #a5a5a5;
+    margin: 0 20px;
+    text-decoration: unset;
+}
+
+.activeLink {
+    text-transform: unset;
+    color: yellow;
+    margin: 0 20px;
+    text-decoration: unset;
+}

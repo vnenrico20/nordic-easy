@@ -1,0 +1,19 @@
+
+###> symfony/framework-bundle ###
+/code/symfony/.env.local
+/code/symfony/.env.local.php
+/code/symfony/.env.*.local
+/code/symfony/config/secrets/prod/prod.decrypt.private.php
+/code/symfony/public/bundles/
+/code/symfony/var/
+/code/symfony/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+.idea
+
+/code/react/node_modules

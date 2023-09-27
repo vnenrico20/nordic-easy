@@ -1,0 +1,44 @@
+.mt10 {
+    margin-top: 10px !important;
+}
+
+.textareaComment {
+    width: calc(100% - 28px);
+    margin: 10px 0 0 0;
+    padding: 16.5px 14px;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    border-radius: 4px;
+}
+
+.textareaComment:focus-visible {
+    outline: none;
+}
+
+.textareaError:focus-visible {
+    border: #d32f2f 2px solid;
+}
+
+.textareaError {
+    border: #d32f2f 1px solid;
+}
+
+.textareaNormal:focus-visible {
+    border: #1976d2 2px solid;
+}
+
+.errorText {
+    color: #d32f2f;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    margin-top: 3px;
+}
